@@ -8,9 +8,13 @@ if (fatigueEndTime != null && new Date().getTime() < Number(fatigueEndTime)) {
 var lastPolicy;
 var urlTestNum = 0;
 
+/*
+和配置文件里的 http-api = 123456@127.0.0.1:6171 保持一致
+policy_group 里的分组也保持一致
+*/
 // 获取当前选中节点
 $httpClient.get({
-    url: 'http://127.0.0.1:6171/v1/policy_groups/select?group_name=Proxy',
+    url: 'http://127.0.0.1:6171/v1/policy_groups/select?group_name=proxy',
     headers: {
         'X-Key': '123456',
         'Accept': '*/*'
@@ -29,12 +33,12 @@ function(error, response, data) {
 // 自动测速，最多尝试3次
 function url_test() {
     $httpClient.post({
-        url: 'http://127.0.0.1:6171/v1/policy_groups/test',
+        url: 'http://127.0.0.1:6171/v1/policy_groups/auto',
         headers: {
             'X-Key': '123456',
             'Accept': '*/*'
         },
-        body: '{"group_name": "Proxy"}'
+        body: '{"group_name": "proxy"}'
     },
     function(error, response, data) {
         urlTestNum = urlTestNum + 1;

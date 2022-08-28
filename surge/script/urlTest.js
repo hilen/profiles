@@ -8,8 +8,7 @@ var global_URLTestDelayTotal = "global_URLTestDelayTotal"
 
 cronUrlTest()
 
-async function cronUrlTest() {
-    
+async function cronUrlTest() {    
     var delay = await getUrlTestDelay();
     var urlTestCount = $persistentStore.read(global_URLTestCount)
     var urlTestDelayTotal = $persistentStore.read(global_URLTestDelayTotal)
@@ -33,15 +32,19 @@ async function cronUrlTest() {
     $done({})
 }
 
+/*
+和配置文件里的 http-api = 123456@127.0.0.1:6171 保持一致
+policy_group 里的分组也保持一致
+*/
 function url_test() {
     return new Promise(resolve => {
         $httpClient.post({
-            url: 'http://127.0.0.1:6171/v1/policy_groups/test',
+            url: 'http://127.0.0.1:6171/v1/policy_groups/auto',
             headers: {
                 'X-Key': '123456',
                 'Accept': '*/*'
             },
-            body: '{"group_name": "Proxy"}'
+            body: '{"group_name": "proxy"}'
         },
         function(error, response, data) {
             if (error) {
@@ -60,7 +63,7 @@ function url_test() {
 }
 
 function getUrlTestDelay() {
-    var url = 'http://www.gstatic.com/generate_204'
+    var url = 'http://cp.cloudflare.com/generate_204'
     return new Promise(resolve => {
         $httpClient.head({ url: url },
         function(error, response, data) {
