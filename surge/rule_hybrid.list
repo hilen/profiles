@@ -1,0 +1,63 @@
+DOMAIN-SUFFIX,a-map.cn
+DOMAIN-SUFFIX,a-map.co
+DOMAIN-SUFFIX,a-map.link
+DOMAIN-SUFFIX,a-map.vip
+DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,amapauto.com
+DOMAIN-SUFFIX,anav.com
+DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,gaode.com
+DOMAIN-SUFFIX,qchannel01.cn
+DOMAIN-SUFFIX,mdap.alipay.com
+DOMAIN-SUFFIX,eco.taobao.com
+DOMAIN-SUFFIX,apptaxi.com.cn
+DOMAIN-SUFFIX,cxyule.com
+DOMAIN-SUFFIX,didi-food.com
+DOMAIN-SUFFIX,didi.cn
+DOMAIN-SUFFIX,didi.xin
+DOMAIN-SUFFIX,didialift.com
+DOMAIN-SUFFIX,didiapp.net.cn
+DOMAIN-SUFFIX,didiaustralia.blog
+DOMAIN-SUFFIX,didichuxing.com
+DOMAIN-SUFFIX,didiglobal.com
+DOMAIN-SUFFIX,didimobility.co.jp
+DOMAIN-SUFFIX,didimobility.com
+DOMAIN-SUFFIX,didiopenapi.com
+DOMAIN-SUFFIX,didiqiche.com
+DOMAIN-SUFFIX,didistatic.com
+DOMAIN-SUFFIX,diditaxi.com
+DOMAIN-SUFFIX,diditaxi.com.cn
+DOMAIN-SUFFIX,didiwuxian.com
+DOMAIN-SUFFIX,didiyun.com
+DOMAIN-SUFFIX,didiyun.org
+DOMAIN-SUFFIX,didiyunapi.com
+DOMAIN-SUFFIX,juyanwenjuan.com
+DOMAIN-SUFFIX,udache.com
+DOMAIN-SUFFIX,xiaojuchefu.cn
+DOMAIN-SUFFIX,xiaojukeji.com
+AND,((DEST-PORT,80), (DOMAIN-KEYWORD,short.weixin.qq.com))
+AND,((DEST-PORT,80), (IP-CIDR,101.89.15.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,101.91.0.0/16,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,61.151.165.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,61.151.165.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,61.151.165.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,116.128.133.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,116.128.171.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,223.166.152.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,183.192.169.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,117.184.242.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,221.181.99.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,113.96.0.0/16,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,183.3.224.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,183.3.234.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,183.232.246.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,14.215.158.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,163.177.81.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,58.251.0.0/16,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,157.255.174.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,112.53.36.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,120.241.21.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,59.36.89.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,112.60.0.0/16,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,61.241.49.0/24,no-resolve))
+AND,((DEST-PORT,80), (IP-CIDR,121.51.0.0/16,no-resolve))
