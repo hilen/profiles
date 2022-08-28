@@ -39,12 +39,12 @@ policy_group 里的分组也保持一致
 function url_test() {
     return new Promise(resolve => {
         $httpClient.post({
-            url: 'http://127.0.0.1:6171/v1/policy_groups/auto',
+            url: 'http://127.0.0.1:6171/v1/policy_groups/test',
             headers: {
                 'X-Key': '123456',
                 'Accept': '*/*'
             },
-            body: '{"group_name": "proxy"}'
+            body: '{"group_name": "auto"}'
         },
         function(error, response, data) {
             if (error) {

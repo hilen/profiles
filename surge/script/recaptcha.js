@@ -14,7 +14,7 @@ policy_group 里的分组也保持一致
 */
 // 获取当前选中节点
 $httpClient.get({
-    url: 'http://127.0.0.1:6171/v1/policy_groups/select?group_name=proxy',
+    url: 'http://127.0.0.1:6171/v1/policy_groups/select?group_name=auto',
     headers: {
         'X-Key': '123456',
         'Accept': '*/*'
@@ -33,12 +33,12 @@ function(error, response, data) {
 // 自动测速，最多尝试3次
 function url_test() {
     $httpClient.post({
-        url: 'http://127.0.0.1:6171/v1/policy_groups/auto',
+        url: 'http://127.0.0.1:6171/v1/policy_groups/test',
         headers: {
             'X-Key': '123456',
             'Accept': '*/*'
         },
-        body: '{"group_name": "proxy"}'
+        body: '{"group_name": "auto"}'
     },
     function(error, response, data) {
         urlTestNum = urlTestNum + 1;
